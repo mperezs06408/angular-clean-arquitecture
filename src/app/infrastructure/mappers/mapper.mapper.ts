@@ -1,3 +1,4 @@
 export abstract class Mapper<I, O> {
-  abstract mapTo(obj: any): O;
+  abstract mapTo(obj: I): O;
+  abstract mapFrom(obj: O): I;
 }

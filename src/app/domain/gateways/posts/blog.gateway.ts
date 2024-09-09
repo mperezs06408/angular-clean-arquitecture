@@ -1,9 +1,13 @@
 import { Observable } from 'rxjs';
-import { PostModel } from '../../entities/posts/post.entity';
+import { Post } from '../../entities/posts/post.entity';
 
 export abstract class BlogGateway {
-  abstract getAllPosts(): Observable<PostModel[]>;
-  abstract getPostById(id: number): Observable<PostModel>;
-  abstract createNewPost(post: PostModel): Observable<boolean>;
+  abstract getAllPosts(): Observable<Post[]>;
+  abstract getPostById(id: number): Observable<Post>;
+  abstract createNewPost(post: {
+    title: string;
+    body: string;
+    userId: number;
+  }): Observable<boolean>;
   abstract deleteExistingPost(id: number): Observable<boolean>;
 }
