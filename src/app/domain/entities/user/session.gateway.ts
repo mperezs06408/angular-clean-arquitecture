@@ -1,5 +1,5 @@
 import { Observable } from 'rxjs';
-import { User } from '../../entities/user/user.entity';
+import { User } from './user.entity';
 
 export interface IUserInfo {
   username: string;

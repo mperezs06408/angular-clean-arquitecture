@@ -1,5 +1,5 @@
 import { Observable } from 'rxjs';
-import { Post } from '../../entities/posts/post.entity';
+import { Post } from './post.entity';
 
 export abstract class BlogGateway {
   abstract getAllPosts(): Observable<Post[]>;

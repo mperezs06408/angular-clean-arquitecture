@@ -1,5 +1,5 @@
-import { PostModel } from '../../entities/posts/post.entity';
-import { BlogGateway } from '../../gateways/posts/blog.gateway';
+import { Post } from '../../entities/posts/post.entity';
+import { BlogGateway } from '../../entities/posts/blog.gateway';
 
 export class PostManagementUseCase {
   constructor(private _blogGateway: BlogGateway) {}
@@ -12,7 +12,7 @@ export class PostManagementUseCase {
     return this._blogGateway.getPostById(id);
   }
 
-  createNewPostEntry(post: PostModel) {
+  createNewPostEntry(post: Post) {
     return this._blogGateway.createNewPost(post);
   }
 
