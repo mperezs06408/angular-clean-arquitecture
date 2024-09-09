@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { BlogGateway } from '../../../domain/entities/posts/blog.gateway';
+import { BlogGateway } from '@domain/entities/posts/blog.gateway';
 import { Observable, catchError, map, of } from 'rxjs';
-import { Post } from '../../../domain/entities/posts/post.entity';
+import { Post } from '@domain/entities/posts/post.entity';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({

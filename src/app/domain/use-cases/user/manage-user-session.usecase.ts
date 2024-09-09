@@ -1,4 +1,7 @@
-import { IUserInfo, SessionGateway } from '../../entities/user/session.gateway';
+import {
+  IUserInfo,
+  SessionGateway,
+} from '@domain/entities/user/session.gateway';
 
 export class UserSessionUseCase {
   constructor(private _sessionGateway: SessionGateway) {}

@@ -1,5 +1,5 @@
-import { Post } from '../../entities/posts/post.entity';
-import { BlogGateway } from '../../entities/posts/blog.gateway';
+import { Post } from '@domain/entities/posts/post.entity';
+import { BlogGateway } from '@domain/entities/posts/blog.gateway';
 
 export class PostManagementUseCase {
   constructor(private _blogGateway: BlogGateway) {}

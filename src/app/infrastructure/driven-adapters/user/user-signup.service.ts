@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { SignUpGateway } from '../../../domain/entities/user/signup.gateway';
+import { SignUpGateway } from '@domain/entities/user/signup.gateway';
 import { Observable, of } from 'rxjs';
-import { User } from '../../../domain/entities/user/user.entity';
+import { User } from '@domain/entities/user/user.entity';
 
 @Injectable({
   providedIn: 'root',

@@ -1,6 +1,6 @@
-import { UserModel } from '../../domain/entities/user/user.entity';
+import { User } from '@domain/entities/user/user.entity';
 
-export const usersMock: UserModel[] = [
+export const usersMock: User[] = [
   {
     firstName: 'Carlos',
     lastName: 'Pérez',

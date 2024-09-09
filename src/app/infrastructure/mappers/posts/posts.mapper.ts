@@ -1,5 +1,5 @@
-import { Post } from '../../../domain/entities/posts/post.entity';
-import { Mapper } from '../mapper.mapper';
+import { Post } from '@domain/entities/posts/post.entity';
+import { Mapper } from '@infrastructure/mappers/mapper.mapper';
 import { PostViewModel } from './models/post-view.model';
 
 export class PostsMapper implements Mapper<Post, PostViewModel> {
