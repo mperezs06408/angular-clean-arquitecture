@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { SpinnerComponent } from '../../molecules/spinner/spinner.component';
-import { SpinnerService } from '../../molecules/spinner/spinner.service';
+import { SpinnerComponent } from '@ui/components/molecules/spinner/spinner.component';
 
 @Component({
   selector: 'main-layout',
@@ -11,7 +10,5 @@ import { SpinnerService } from '../../molecules/spinner/spinner.service';
   imports: [RouterLink, SpinnerComponent],
 })
 export class MainLayout {
-  constructor(private test: SpinnerService) {
-    this.test.show();
-  }
+  constructor() {}
 }

@@ -92,7 +92,10 @@
               }
             ],
             "styles": ["src/styles.scss"],
-            "scripts": []
+            "scripts": [],
+            "stylePreprocessorOptions": {
+              "includePaths": ["src/app/ui/styles"]
+            }
           }
         }
       }

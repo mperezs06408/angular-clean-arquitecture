@@ -4,10 +4,10 @@
 
 Implementar formulario sencillo con conexión a Cognito que realice las siguientes actividades:
 
-[] Estructura de carpetas de CA
+[x] Estructura de carpetas de CA
 [x] Definiciones de dominio
-[] Definiciones de infraestructura
-[] Definiciones de UI
+[x] Definiciones de infraestructura
+[x] Definiciones de UI
 [] Implementación de Validators
 [] Implementación de Guards
 [] Consumo de servicios externos (API free)
@@ -15,7 +15,7 @@ Implementar formulario sencillo con conexión a Cognito que realice las siguient
 ## Paso a paso
 
 [x] Definición de entidades y casos de uso
-[] Creación de gateways
+[x] Creación de gateways
 [] Consumo de Cognito AWS
 [] Creación de UI
 [] Definición de rutas protegidas
