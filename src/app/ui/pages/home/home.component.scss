@@ -1,0 +1,10 @@
+.posts {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 37.5rem;
+    margin: auto;
+  }
+}

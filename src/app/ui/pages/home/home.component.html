@@ -1,0 +1,8 @@
+<ul class="posts__container" *ngIf="posts$ | async as posts">
+  <li *ngFor="let post of posts">
+    <m-post-card
+      [post]="post"
+      (onClickDeleteEvent)="deletePost($event)"
+    ></m-post-card>
+  </li>
+</ul>

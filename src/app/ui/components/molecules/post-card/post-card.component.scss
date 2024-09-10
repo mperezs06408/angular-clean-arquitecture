@@ -1,0 +1,50 @@
+.postCard {
+  background-color: #ededed;
+  padding: 1rem 1.5rem;
+  border: 1px solid #e6e6e6;
+  border-radius: 0.3125rem;
+
+  &__header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 1.5rem;
+    border-bottom: 0.0625rem solid #e6e6e6;
+  }
+
+  &__id {
+    display: inline-block;
+    font-size: 1.802rem;
+    font-style: italic;
+    font-weight: bold;
+    opacity: 0.2;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    text-transform: lowercase;
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  &__button {
+    background-color: #f00;
+    color: #fff;
+    text-transform: uppercase;
+    height: fit-content;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+
+    &:focus {
+      background-color: #fff;
+      color: #f00;
+    }
+  }
+
+  &__description {
+    color: #1e1e1e;
+  }
+}

@@ -1,0 +1,35 @@
+@mixin center($justify-content: center) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: center;
+}
+
+.navbar {
+  @include center(space-between);
+  background-color: #1e1e1e;
+  padding: 0.3rem 1rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-bottom: 2rem;
+
+  &__title {
+    color: #fff;
+  }
+
+  &__list {
+    @include center(space-between);
+    gap: 1.5rem;
+    &__item {
+      a {
+        font-size: 1.2rem;
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+
+        &:hover {
+          color: #f00;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+<article class="postCard">
+  <div class="postCard__header">
+    <span class="postCard__id"> # {{ post.id }} </span>
+    <h2 class="postCard__title">{{ post.title }}</h2>
+    <button class="postCard__button" (click)="onClickButton(post.id)">
+      Delete
+    </button>
+  </div>
+  <p class="postCard__description">{{ post.body }}</p>
+</article>

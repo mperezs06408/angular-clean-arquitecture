@@ -1,2 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
 @import "reset";
+
+* {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 2.027rem;
+  font-weight: 500;
+}
+h2 {
+  font-size: 1.802rem;
+  font-weight: 500;
+}
+h3 {
+  font-size: 1.602rem;
+  font-weight: 500;
+}
+h4 {
+  font-size: 1.424rem;
+  font-weight: 500;
+}
+h5 {
+  font-size: 1.266rem;
+  font-weight: 500;
+}
+h6 {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+p {
+  font-size: 1rem;
+  font-weight: 300;
+}

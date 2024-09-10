@@ -1,6 +1,7 @@
 import { Post } from '@domain/entities/posts/post.entity';
 import { BlogGateway } from '@domain/entities/posts/blog.gateway';
-
+import { Injectable } from '@angular/core';
+@Injectable({ providedIn: 'root' })
 export class PostManagementUseCase {
   constructor(private _blogGateway: BlogGateway) {}
 

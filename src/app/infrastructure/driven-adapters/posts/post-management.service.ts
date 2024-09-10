@@ -1,12 +1,10 @@
 import { Injectable } from '@angular/core';
 import { BlogGateway } from '@domain/entities/posts/blog.gateway';
-import { Observable, catchError, map, of } from 'rxjs';
+import { Observable, catchError, map, of, tap } from 'rxjs';
 import { Post } from '@domain/entities/posts/post.entity';
 import { HttpClient } from '@angular/common/http';
 
-@Injectable({
-  providedIn: 'root',
-})
+@Injectable()
 export class PostManagementGatewayService implements BlogGateway {
   private _baseUrl: string = 'https://jsonplaceholder.typicode.com/posts';
 
@@ -42,6 +40,9 @@ export class PostManagementGatewayService implements BlogGateway {
 
   deleteExistingPost(id: number): Observable<boolean> {
     return this._httpClient.delete(`${this._baseUrl}/${id}`).pipe(
+      tap(() => {
+        console.log('it works');
+      }),
       map(() => true),
       catchError((e) => {
         console.log(e);
