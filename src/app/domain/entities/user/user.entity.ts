@@ -1,8 +1,8 @@
 export class User {
-  firstName!: string;
-  lastName!: string;
   username!: string;
+  name!: string;
+  email!: string;
   password!: string;
-  mobileNumber!: string;
+  phone_number!: string;
   role!: 'Admin' | 'User';
 }

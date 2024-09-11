@@ -1,4 +1,4 @@
-import { Post } from '@/domain/entities/posts/post.entity';
+import { Post } from '@domain/entities/posts/post.entity';
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({

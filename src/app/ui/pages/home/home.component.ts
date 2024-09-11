@@ -1,6 +1,6 @@
-import { Post } from '@/domain/entities/posts/post.entity';
-import { PostManagementUseCase } from '@/domain/use-cases/posts/manage-posts.usecase';
-import { PostCard } from '@/ui/components/molecules/post-card/post-card.component';
+import { Post } from '@domain/entities/posts/post.entity';
+import { PostManagementUseCase } from '@domain/use-cases/posts/manage-posts.usecase';
+import { PostCard } from '@ui/components/molecules/post-card/post-card.component';
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';

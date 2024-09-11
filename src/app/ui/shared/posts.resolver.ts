@@ -1,5 +1,5 @@
-import { Post } from '@/domain/entities/posts/post.entity';
-import { PostManagementUseCase } from '@/domain/use-cases/posts/manage-posts.usecase';
+import { Post } from '@domain/entities/posts/post.entity';
+import { PostManagementUseCase } from '@domain/use-cases/posts/manage-posts.usecase';
 import { Injectable } from '@angular/core';
 import {
   ActivatedRouteSnapshot,

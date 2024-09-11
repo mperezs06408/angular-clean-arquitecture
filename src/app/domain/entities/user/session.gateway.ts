@@ -2,11 +2,12 @@ import { Observable } from 'rxjs';
 import { User } from './user.entity';
 
 export interface IUserInfo {
-  username: string;
+  email: string;
   password: string;
 }
 
 export abstract class SessionGateway {
-  abstract logIn({ username, password }: IUserInfo): Observable<User | null>;
+  abstract logIn({ email, password }: IUserInfo): Observable<boolean>;
   abstract logOut(): Observable<boolean>;
+  abstract signUp(user: User): Observable<boolean>;
 }

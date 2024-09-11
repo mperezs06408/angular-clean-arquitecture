@@ -3,7 +3,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./src",
+    "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "strict": true,
     "noImplicitOverride": true,
@@ -21,11 +21,11 @@
     "target": "ES2022",
     "module": "ES2022",
     "paths": {
-      "@/*": ["app/*"],
-      "@config/*": ["app/config/*"],
-      "@domain/*": ["app/domain/*"],
-      "@infrastructure/*": ["app/infrastructure/*"],
-      "@ui/*": ["app/ui/*"]
+      "@/*": ["src/*"],
+      "@config/*": ["src/app/config/*"],
+      "@domain/*": ["src/app/domain/*"],
+      "@infrastructure/*": ["src/app/infrastructure/*"],
+      "@ui/*": ["src/app/ui/*"]
     },
     "lib": ["ES2022", "dom"]
   },

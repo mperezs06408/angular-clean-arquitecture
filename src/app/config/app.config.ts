@@ -3,15 +3,15 @@ import { provideRouter } from '@angular/router';
 
 import { routes } from './app.routes';
 import { provideClientHydration } from '@angular/platform-browser';
-import { BlogGateway } from '@/domain/entities/posts/blog.gateway';
-import { PostManagementGatewayService } from '@/infrastructure/driven-adapters/posts/post-management.service';
+import { BlogGateway } from '@domain/entities/posts/blog.gateway';
+import { PostManagementGatewayService } from '@infrastructure/driven-adapters/posts/post-management.service';
 import {
   HTTP_INTERCEPTORS,
   provideHttpClient,
   withFetch,
   withInterceptorsFromDi,
 } from '@angular/common/http';
-import { SpinnerInterceptor } from '@/ui/shared/services/interceptors/spinner.interceptor';
+import { SpinnerInterceptor } from '@ui/shared/services/interceptors/spinner.interceptor';
 
 export const appConfig: ApplicationConfig = {
   providers: [

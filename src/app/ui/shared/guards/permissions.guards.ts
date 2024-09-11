@@ -1,4 +1,4 @@
-import { ROUTES } from '@/ui/helpers/constants/routes';
+import { ROUTES } from '@ui/helpers/constants/routes';
 import { Injectable } from '@angular/core';
 import {
   ActivatedRouteSnapshot,

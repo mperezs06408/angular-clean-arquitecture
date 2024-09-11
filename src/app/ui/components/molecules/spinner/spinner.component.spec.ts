@@ -3,7 +3,7 @@ import { SpinnerService } from './spinner.service';
 import { SpinnerComponent } from './spinner.component';
 import { By } from '@angular/platform-browser';
 
-describe('UserSessionGatewayService', () => {
+describe('SpinnerComponent', () => {
   let component: SpinnerComponent;
   let service: SpinnerService;
   let fixture: ComponentFixture<SpinnerComponent>;

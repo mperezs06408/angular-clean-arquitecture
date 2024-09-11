@@ -1,4 +1,4 @@
-import { SpinnerService } from '@/ui/components/molecules/spinner/spinner.service';
+import { SpinnerService } from '@ui/components/molecules/spinner/spinner.service';
 import {
   HttpEvent,
   HttpHandler,

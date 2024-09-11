@@ -1,8 +1,7 @@
-import { TestBed } from '@angular/core/testing';
 import { PostCard } from './post-card.component';
-import { Post } from '@/domain/entities/posts/post.entity';
+import { Post } from '@domain/entities/posts/post.entity';
 
-describe('UserSessionGatewayService', () => {
+describe('PostCard', () => {
   let component: PostCard;
   const mockPost: Post = {
     id: 1,
