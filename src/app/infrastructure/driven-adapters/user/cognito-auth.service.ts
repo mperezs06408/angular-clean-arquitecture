@@ -8,6 +8,7 @@ import { User } from '@domain/entities/user/user.entity';
 
 import { Amplify } from 'aws-amplify';
 import {
+  confirmSignUp as confirmSignUpOnCognito,
   signIn as logInOnCognito,
   signOut as logOutOnCognito,
   signUp as singUpOnCognito,
@@ -44,13 +45,23 @@ export class CognitoAuthService implements SessionGateway {
         options: {
           userAttributes: {
             email: user.email,
-            phone_number: user.phone_number,
+            phone_number: '+57' + user.phone_number,
             name: user.name,
           },
         },
       })
     ).pipe(
-      map((value) => value.isSignUpComplete),
+      map((value) => value.isSignUpComplete ?? false),
+      catchError(() => of(false))
+    );
+  }
+
+  confirmSignUp(params: {
+    username: string;
+    confirmationCode: string;
+  }): Observable<boolean> {
+    return from(confirmSignUpOnCognito(params)).pipe(
+      map((value) => value.isSignUpComplete ?? false),
       catchError(() => of(false))
     );
   }

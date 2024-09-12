@@ -41,3 +41,5 @@ Implementar formulario sencillo con conexión a Cognito que realice las siguient
 [x] Sonar Qube
 [] Calidad de código
 [] Playwright
+
+angular, pipeline, testing con jest ngmock\* sonarlint, js refactor assisstant

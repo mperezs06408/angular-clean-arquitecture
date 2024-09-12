@@ -1,0 +1,21 @@
+<form [formGroup]="loginForm" (ngSubmit)="submit()">
+  <label for="email">E-mail:</label>
+  <input
+    type="text"
+    id="email"
+    formControlName="email"
+    placeholder="example@domain.com"
+    required
+  />
+
+  <label for="password">Password:</label>
+  <input
+    type="password"
+    id="password"
+    formControlName="password"
+    placeholder="********"
+    required
+  />
+
+  <button type="submit" [disabled]="isInvalidForm()">Enviar</button>
+</form>

@@ -46,4 +46,4 @@ Thumbs.db
 !/src/environments/*.template.ts
 
 # Others
-ROADMAP.md
+/ROADMAP.md

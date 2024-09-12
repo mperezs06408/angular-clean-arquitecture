@@ -12,6 +12,8 @@ import {
   withInterceptorsFromDi,
 } from '@angular/common/http';
 import { SpinnerInterceptor } from '@ui/shared/services/interceptors/spinner.interceptor';
+import { SessionGateway } from '@domain/entities/user/session.gateway';
+import { CognitoAuthService } from '@infrastructure/driven-adapters/user/cognito-auth.service';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -22,6 +24,7 @@ export const appConfig: ApplicationConfig = {
     provideHttpClient(withInterceptorsFromDi()),
     // Casos de uso
     { provide: BlogGateway, useClass: PostManagementGatewayService },
+    { provide: SessionGateway, useClass: CognitoAuthService },
     // Interceptors
     { provide: HTTP_INTERCEPTORS, useClass: SpinnerInterceptor, multi: true },
   ],

@@ -1,0 +1,15 @@
+<div>
+  <button *ngFor="let view of views" (click)="onChangeView(view)">
+    {{ view }}
+  </button>
+</div>
+<o-login-form
+  *ngIf="activeView === views[0]"
+  (onSubmit)="onSubmit($event)"
+></o-login-form>
+<o-signup-form
+  *ngIf="activeView === views[1]"
+  (onSignUp)="onRegister($event)"
+  (onConfirm)="onConfirmCode($event)"
+></o-signup-form>
+<button (click)="onSignOut()">sign out</button>

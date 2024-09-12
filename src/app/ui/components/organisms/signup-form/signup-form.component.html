@@ -1,0 +1,67 @@
+<form
+  [formGroup]="signupForm"
+  *ngIf="currentStep === formStep[0]"
+  (ngSubmit)="signUp()"
+>
+  <label for="email">E-mail:</label>
+  <input
+    type="text"
+    id="email"
+    autocomplete="email"
+    formControlName="email"
+    required
+  />
+
+  <label for="password">Password:</label>
+  <input
+    type="password"
+    id="password"
+    autocomplete="current-password"
+    formControlName="password"
+    required
+  />
+
+  <label for="name">Name:</label>
+  <input
+    type="text"
+    id="name"
+    autocomplete="name"
+    formControlName="name"
+    required
+  />
+
+  <label for="phone_number">Phone number:</label>
+  <input
+    type="text"
+    id="phone_number"
+    formControlName="phone_number"
+    required
+  />
+
+  <button type="submit" [disabled]="isSignUpFormInvalid()">Enviar</button>
+</form>
+
+<form
+  [formGroup]="confirmationStepForm"
+  *ngIf="currentStep === formStep[1]"
+  (ngSubmit)="confirm()"
+>
+  <label for="username">E-mail:</label>
+  <input
+    type="text"
+    id="username"
+    autocomplete="email"
+    formControlName="username"
+    required
+  />
+
+  <label for="confirmationCode">Confirmation code:</label>
+  <input
+    type="text"
+    id="confirmationCode"
+    formControlName="confirmationCode"
+    required
+  />
+
+  <button type="submit" [disabled]="isConfirmFormInvalid()">Enviar</button>
+</form>
